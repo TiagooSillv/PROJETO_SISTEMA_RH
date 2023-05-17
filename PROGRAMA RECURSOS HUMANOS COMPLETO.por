@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Arquivos -->a
+	inclua biblioteca Arquivos -->A
 	inclua biblioteca ServicosWeb -->WS
 	inclua biblioteca Texto --> TXT
 	inclua biblioteca Matematica --> MAT
