@@ -28,12 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lbl = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(56, 23);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(44, 16);
+            this.lbl.TabIndex = 0;
+            this.lbl.Text = "label1";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(16, 91);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(194, 22);
+            this.textBox1.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(11, 262);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(847, 180);
+            this.panel1.TabIndex = 2;
+            // 
+            // frmBeneficioAdicionalNoturno
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(868, 450);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl);
+            this.Name = "frmBeneficioAdicionalNoturno";
             this.Text = "frmBeneficioAdicionalNoturno";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
