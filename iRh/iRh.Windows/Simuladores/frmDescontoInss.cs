@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iRh.Windows.Core;
+using System;
 using System.Windows.Forms;
 
 namespace iRh.Windows.Simuladores
 {
     public partial class frmDescontoInss : Form
     {
+        //CONTRUTOR É O PRIMEIRO QUE VAI FUNCIONAR QUANDO SE INICIA UM PROGRAMA
         public frmDescontoInss()
-        {
+        { 
             InitializeComponent();
         }
 
@@ -28,12 +23,33 @@ namespace iRh.Windows.Simuladores
             try
             {
                 var salario = double.Parse(txtSalario.Text);
+
+                var descontoInss = Inss.Calcula(salario);
+                lblResultado.Text = "R$" + descontoInss.ToString("F2");
+                panel1.Visible = true;
             }
+
             catch (Exception)
             {
                 MessageBox.Show("Informe um valor valido por favor!!!, ex: 3500", "erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
-        }
+
+            
+    
+
+            
+            
+             
+            
+
+
+
+
+
+
+
+        }   
+
     }
 }
