@@ -87,5 +87,12 @@ namespace iRh.Windows
             form.MdiParent = this;
             form.Show();
         }
+
+        private void menuCadastroFuncionario_Click(object sender, EventArgs e)
+        {
+            var form = new Cadastros.frmFuncionario();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
