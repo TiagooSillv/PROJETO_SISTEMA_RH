@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iRh.Windows.Core;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,35 @@ namespace iRh.Windows.Simuladores
         public frmBeneficioPericulosidade()
         {
             InitializeComponent();
+        }
+
+        private void btnCalacula_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSalario.Text))
+            {
+                MessageBox.Show("Informe o seu salário base por favor!!", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSalario.Focus();
+
+                return;
+            }
+            if (string.IsNullOrEmpty(txtPericulosidade.Text))
+            {
+
+                MessageBox.Show("Informe o seu salário base por favor!!", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSalario.Focus();
+                return;
+            }
+            try
+            {
+                var salario = double.Parse(txtSalario.Text);
+                var horasPericulosidade = double.Parse(txtPericulosidade.Text);
+                var calculoHoraPericulosidade = HorasPericulosidade.Calcula(salario, horasPericulosidade);
+                lblSalario.Text = "R$" + calculoHoraPericulosidade("F2"); 
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Informe um valor valido por favor!!!, ex: 3500", "erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
