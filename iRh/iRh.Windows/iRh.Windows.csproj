@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Core\AdicionalNoturno.cs" />
     <Compile Include="Core\Fgts.cs" />
+    <Compile Include="Core\HorasExtras.cs" />
     <Compile Include="Core\Inss.cs" />
     <Compile Include="Core\ValeTransporte.cs" />
     <Compile Include="PrincipalMdi.cs">
@@ -144,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmBeneficioFgts.resx">
       <DependentUpon>frmBeneficioFgts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmBeneficioHorasExtras.resx">
+      <DependentUpon>frmBeneficioHorasExtras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmBeneficioValeTransporte.resx">
       <DependentUpon>frmBeneficioValeTransporte.cs</DependentUpon>

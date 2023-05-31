@@ -58,12 +58,14 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.lblResultado);
             this.panel1.Location = new System.Drawing.Point(8, 213);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(635, 146);
             this.panel1.TabIndex = 2;
+            this.panel1.Visible = false;
             // 
             // btnCalacula
             // 
