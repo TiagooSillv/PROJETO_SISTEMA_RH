@@ -30,7 +30,7 @@ namespace iRh.Windows.Simuladores
             if (string.IsNullOrEmpty(txtPericulosidade.Text))
             {
 
-                MessageBox.Show("Informe o seu salário base por favor!!", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Informe as horas feitas por favor!!", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtSalario.Focus();
                 return;
             }
@@ -39,7 +39,8 @@ namespace iRh.Windows.Simuladores
                 var salario = double.Parse(txtSalario.Text);
                 var horasPericulosidade = double.Parse(txtPericulosidade.Text);
                 var calculoHoraPericulosidade = HorasPericulosidade.Calcula(salario, horasPericulosidade);
-                lblSalario.Text = "R$" + calculoHoraPericulosidade("F2"); 
+                lblResultado.Text = "R$" + calculoHoraPericulosidade.ToString("F2");
+                panel1.Visible = true;
             }
             catch (Exception)
             {
