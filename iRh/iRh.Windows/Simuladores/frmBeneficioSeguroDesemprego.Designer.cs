@@ -30,23 +30,21 @@
         {
             this.rbSolicitouBeneficioNao = new System.Windows.Forms.RadioButton();
             this.rbSolicitouBeneficoSim = new System.Windows.Forms.RadioButton();
-            this.cmbMesesTrabalhados = new System.Windows.Forms.ComboBox();
             this.lblTrabalahndoAtualmente = new System.Windows.Forms.Label();
             this.lblAnosDeCarteira = new System.Windows.Forms.Label();
             this.btnCalcula = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblresultado = new System.Windows.Forms.Label();
-            this.lblSalario = new System.Windows.Forms.Label();
-            this.txtSalario = new System.Windows.Forms.TextBox();
             this.txtVezesSolicitadas = new System.Windows.Forms.TextBox();
             this.lblVezesSolicitadas = new System.Windows.Forms.Label();
+            this.txtMesesTrabalhados = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // rbSolicitouBeneficioNao
             // 
             this.rbSolicitouBeneficioNao.AutoSize = true;
-            this.rbSolicitouBeneficioNao.Location = new System.Drawing.Point(158, 108);
+            this.rbSolicitouBeneficioNao.Location = new System.Drawing.Point(131, 108);
             this.rbSolicitouBeneficioNao.Margin = new System.Windows.Forms.Padding(4);
             this.rbSolicitouBeneficioNao.Name = "rbSolicitouBeneficioNao";
             this.rbSolicitouBeneficioNao.Size = new System.Drawing.Size(54, 20);
@@ -59,7 +57,7 @@
             // rbSolicitouBeneficoSim
             // 
             this.rbSolicitouBeneficoSim.AutoSize = true;
-            this.rbSolicitouBeneficoSim.Location = new System.Drawing.Point(76, 108);
+            this.rbSolicitouBeneficoSim.Location = new System.Drawing.Point(53, 108);
             this.rbSolicitouBeneficoSim.Margin = new System.Windows.Forms.Padding(4);
             this.rbSolicitouBeneficoSim.Name = "rbSolicitouBeneficoSim";
             this.rbSolicitouBeneficoSim.Size = new System.Drawing.Size(51, 20);
@@ -69,45 +67,10 @@
             this.rbSolicitouBeneficoSim.UseVisualStyleBackColor = true;
             this.rbSolicitouBeneficoSim.CheckedChanged += new System.EventHandler(this.rbSolicitouBeneficioSim_CheckedChanged);
             // 
-            // cmbMesesTrabalhados
-            // 
-            this.cmbMesesTrabalhados.FormattingEnabled = true;
-            this.cmbMesesTrabalhados.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24"});
-            this.cmbMesesTrabalhados.Location = new System.Drawing.Point(52, 216);
-            this.cmbMesesTrabalhados.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbMesesTrabalhados.Name = "cmbMesesTrabalhados";
-            this.cmbMesesTrabalhados.Size = new System.Drawing.Size(160, 24);
-            this.cmbMesesTrabalhados.TabIndex = 19;
-            // 
             // lblTrabalahndoAtualmente
             // 
             this.lblTrabalahndoAtualmente.AutoSize = true;
-            this.lblTrabalahndoAtualmente.Location = new System.Drawing.Point(56, 187);
+            this.lblTrabalahndoAtualmente.Location = new System.Drawing.Point(48, 189);
             this.lblTrabalahndoAtualmente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTrabalahndoAtualmente.Name = "lblTrabalahndoAtualmente";
             this.lblTrabalahndoAtualmente.Size = new System.Drawing.Size(346, 16);
@@ -117,7 +80,7 @@
             // lblAnosDeCarteira
             // 
             this.lblAnosDeCarteira.AutoSize = true;
-            this.lblAnosDeCarteira.Location = new System.Drawing.Point(73, 88);
+            this.lblAnosDeCarteira.Location = new System.Drawing.Point(49, 88);
             this.lblAnosDeCarteira.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAnosDeCarteira.Name = "lblAnosDeCarteira";
             this.lblAnosDeCarteira.Size = new System.Drawing.Size(225, 16);
@@ -133,6 +96,7 @@
             this.btnCalcula.TabIndex = 16;
             this.btnCalcula.Text = "CALCULAR";
             this.btnCalcula.UseVisualStyleBackColor = true;
+            this.btnCalcula.Click += new System.EventHandler(this.btnCalcula_Click);
             // 
             // panel1
             // 
@@ -153,28 +117,9 @@
             this.lblresultado.TabIndex = 4;
             this.lblresultado.Text = "label1";
             // 
-            // lblSalario
-            // 
-            this.lblSalario.AutoSize = true;
-            this.lblSalario.Location = new System.Drawing.Point(228, 9);
-            this.lblSalario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(64, 16);
-            this.lblSalario.TabIndex = 14;
-            this.lblSalario.Text = "SALÁRIO";
-            // 
-            // txtSalario
-            // 
-            this.txtSalario.Location = new System.Drawing.Point(158, 29);
-            this.txtSalario.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(239, 22);
-            this.txtSalario.TabIndex = 13;
-            this.txtSalario.Visible = false;
-            // 
             // txtVezesSolicitadas
             // 
-            this.txtVezesSolicitadas.Location = new System.Drawing.Point(59, 152);
+            this.txtVezesSolicitadas.Location = new System.Drawing.Point(53, 152);
             this.txtVezesSolicitadas.Margin = new System.Windows.Forms.Padding(4);
             this.txtVezesSolicitadas.Name = "txtVezesSolicitadas";
             this.txtVezesSolicitadas.Size = new System.Drawing.Size(239, 22);
@@ -185,7 +130,7 @@
             // lblVezesSolicitadas
             // 
             this.lblVezesSolicitadas.AutoSize = true;
-            this.lblVezesSolicitadas.Location = new System.Drawing.Point(56, 132);
+            this.lblVezesSolicitadas.Location = new System.Drawing.Point(48, 132);
             this.lblVezesSolicitadas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVezesSolicitadas.Name = "lblVezesSolicitadas";
             this.lblVezesSolicitadas.Size = new System.Drawing.Size(338, 16);
@@ -193,22 +138,29 @@
             this.lblVezesSolicitadas.Text = "Informe a quantidade de vezes que solicitou o benefício";
             this.lblVezesSolicitadas.Visible = false;
             // 
+            // txtMesesTrabalhados
+            // 
+            this.txtMesesTrabalhados.Location = new System.Drawing.Point(52, 219);
+            this.txtMesesTrabalhados.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMesesTrabalhados.Name = "txtMesesTrabalhados";
+            this.txtMesesTrabalhados.Size = new System.Drawing.Size(239, 22);
+            this.txtMesesTrabalhados.TabIndex = 24;
+            this.txtMesesTrabalhados.WordWrap = false;
+            // 
             // frmBeneficioSeguroDesemprego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 654);
+            this.Controls.Add(this.txtMesesTrabalhados);
             this.Controls.Add(this.lblVezesSolicitadas);
             this.Controls.Add(this.txtVezesSolicitadas);
             this.Controls.Add(this.rbSolicitouBeneficioNao);
             this.Controls.Add(this.rbSolicitouBeneficoSim);
-            this.Controls.Add(this.cmbMesesTrabalhados);
             this.Controls.Add(this.lblTrabalahndoAtualmente);
             this.Controls.Add(this.lblAnosDeCarteira);
             this.Controls.Add(this.btnCalcula);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblSalario);
-            this.Controls.Add(this.txtSalario);
             this.Name = "frmBeneficioSeguroDesemprego";
             this.Text = "frmBeneficioSeguroDesemprego";
             this.panel1.ResumeLayout(false);
@@ -222,15 +174,13 @@
 
         private System.Windows.Forms.RadioButton rbSolicitouBeneficioNao;
         private System.Windows.Forms.RadioButton rbSolicitouBeneficoSim;
-        private System.Windows.Forms.ComboBox cmbMesesTrabalhados;
         private System.Windows.Forms.Label lblTrabalahndoAtualmente;
         private System.Windows.Forms.Label lblAnosDeCarteira;
         private System.Windows.Forms.Button btnCalcula;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblresultado;
-        private System.Windows.Forms.Label lblSalario;
-        private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.TextBox txtVezesSolicitadas;
         private System.Windows.Forms.Label lblVezesSolicitadas;
+        private System.Windows.Forms.TextBox txtMesesTrabalhados;
     }
 }
