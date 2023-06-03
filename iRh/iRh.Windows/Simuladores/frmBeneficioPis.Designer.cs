@@ -1,4 +1,6 @@
-﻿namespace iRh.Windows.Simuladores
+﻿using System;
+
+namespace iRh.Windows.Simuladores
 {
     partial class frmBeneficioPis
     {
@@ -36,8 +38,8 @@
             this.lblAnosDeCarteira = new System.Windows.Forms.Label();
             this.lblTrabalahndoAtualmente = new System.Windows.Forms.Label();
             this.cmbMesesTrabalhados = new System.Windows.Forms.ComboBox();
-            this.rbTempoDeCarteiraSim = new System.Windows.Forms.RadioButton();
-            this.rbTempoDeCarteiraNao = new System.Windows.Forms.RadioButton();
+            this.rbSolicitouBeneficioSim = new System.Windows.Forms.RadioButton();
+            this.rbSolicitouBeneficioNao = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,34 +128,34 @@
             // 
             // rbTempoDeCarteiraSim
             // 
-            this.rbTempoDeCarteiraSim.AutoSize = true;
-            this.rbTempoDeCarteiraSim.Location = new System.Drawing.Point(142, 109);
-            this.rbTempoDeCarteiraSim.Name = "rbTempoDeCarteiraSim";
-            this.rbTempoDeCarteiraSim.Size = new System.Drawing.Size(42, 17);
-            this.rbTempoDeCarteiraSim.TabIndex = 11;
-            this.rbTempoDeCarteiraSim.TabStop = true;
-            this.rbTempoDeCarteiraSim.Text = "Sim";
-            this.rbTempoDeCarteiraSim.UseVisualStyleBackColor = true;
+            this.rbSolicitouBeneficioSim.AutoSize = true;
+            this.rbSolicitouBeneficioSim.Location = new System.Drawing.Point(142, 109);
+            this.rbSolicitouBeneficioSim.Name = "rbSolicitouBeneficioSim";
+            this.rbSolicitouBeneficioSim.Size = new System.Drawing.Size(42, 17);
+            this.rbSolicitouBeneficioSim.TabIndex = 11;
+            this.rbSolicitouBeneficioSim.TabStop = true;
+            this.rbSolicitouBeneficioSim.Text = "Sim";
+            this.rbSolicitouBeneficioSim.UseVisualStyleBackColor = true;
             // 
             // rbTempoDeCarteiraNao
             // 
-            this.rbTempoDeCarteiraNao.AutoSize = true;
-            this.rbTempoDeCarteiraNao.Location = new System.Drawing.Point(200, 109);
-            this.rbTempoDeCarteiraNao.Name = "rbTempoDeCarteiraNao";
-            this.rbTempoDeCarteiraNao.Size = new System.Drawing.Size(45, 17);
-            this.rbTempoDeCarteiraNao.TabIndex = 12;
-            this.rbTempoDeCarteiraNao.TabStop = true;
-            this.rbTempoDeCarteiraNao.Text = "Não";
-            this.rbTempoDeCarteiraNao.UseVisualStyleBackColor = true;
-            this.rbTempoDeCarteiraNao.CheckedChanged += new System.EventHandler(this.rbTempoDeCarteiraNao_CheckedChanged);
+            this.rbSolicitouBeneficioNao.AutoSize = true;
+            this.rbSolicitouBeneficioNao.Location = new System.Drawing.Point(200, 109);
+            this.rbSolicitouBeneficioNao.Name = "rbTempoDeCarteiraNao";
+            this.rbSolicitouBeneficioNao.Size = new System.Drawing.Size(45, 17);
+            this.rbSolicitouBeneficioNao.TabIndex = 12;
+            this.rbSolicitouBeneficioNao.TabStop = true;
+            this.rbSolicitouBeneficioNao.Text = "Não";
+            this.rbSolicitouBeneficioNao.UseVisualStyleBackColor = true;
+            this.rbSolicitouBeneficioNao.CheckedChanged += new System.EventHandler(this.rbSolicitouBeneficioNao_CheckedChanged);
             // 
             // frmBeneficioPis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 450);
-            this.Controls.Add(this.rbTempoDeCarteiraNao);
-            this.Controls.Add(this.rbTempoDeCarteiraSim);
+            this.Controls.Add(this.rbSolicitouBeneficioNao);
+            this.Controls.Add(this.rbSolicitouBeneficioNao);
             this.Controls.Add(this.cmbMesesTrabalhados);
             this.Controls.Add(this.lblTrabalahndoAtualmente);
             this.Controls.Add(this.lblAnosDeCarteira);
@@ -170,6 +172,11 @@
 
         }
 
+        private void rbSolicitouBeneficioNao_CheckedChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private System.Windows.Forms.TextBox txtSalario;
@@ -180,7 +187,7 @@
         private System.Windows.Forms.Label lblAnosDeCarteira;
         private System.Windows.Forms.Label lblTrabalahndoAtualmente;
         private System.Windows.Forms.ComboBox cmbMesesTrabalhados;
-        private System.Windows.Forms.RadioButton rbTempoDeCarteiraSim;
-        private System.Windows.Forms.RadioButton rbTempoDeCarteiraNao;
+        private System.Windows.Forms.RadioButton rbSolicitouBeneficioSim;
+        private System.Windows.Forms.RadioButton rbSolicitouBeneficioNao;
     }
 }

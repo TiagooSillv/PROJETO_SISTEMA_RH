@@ -16,5 +16,16 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
+
+        private void rbSolicitouBeneficioSim_CheckedChanged(object sender, EventArgs e)
+        {
+            lblVezesSolicitadas.Visible = true;
+            txtVezesSolicitadas.Visible = true;
+        }
+
+        private void rbSolicitouBeneficioNao_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
