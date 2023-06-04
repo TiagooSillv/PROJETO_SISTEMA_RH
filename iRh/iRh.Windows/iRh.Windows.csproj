@@ -144,6 +144,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Simuladores\frmBeneficioAdicionalNoturno.resx">
       <DependentUpon>frmBeneficioAdicionalNoturno.cs</DependentUpon>
@@ -188,6 +189,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\business-color_badge_icon-icons.com_53477 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rh.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rh 1.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
