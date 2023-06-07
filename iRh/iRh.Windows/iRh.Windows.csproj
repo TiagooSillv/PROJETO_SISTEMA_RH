@@ -201,5 +201,8 @@
   <ItemGroup>
     <None Include="Resources\qual-o-perfil-ideal-dos-profissionais-de-rh.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qual-o-perfil-ideal-dos-profissionais-de-rh1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

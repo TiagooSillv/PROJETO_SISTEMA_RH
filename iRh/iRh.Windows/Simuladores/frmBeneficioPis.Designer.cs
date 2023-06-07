@@ -175,7 +175,6 @@ namespace iRh.Windows.Simuladores
             this.rbSolicitouBeneficioSim.TabStop = true;
             this.rbSolicitouBeneficioSim.Text = "Sim";
             this.rbSolicitouBeneficioSim.UseVisualStyleBackColor = false;
-            this.rbSolicitouBeneficioSim.CheckedChanged += new System.EventHandler(this.rbSolicitouBeneficioSim_CheckedChanged);
             // 
             // frmBeneficioPis
             // 
