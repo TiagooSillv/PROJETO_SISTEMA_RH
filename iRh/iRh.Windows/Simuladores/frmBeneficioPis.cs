@@ -24,6 +24,25 @@ namespace iRh.Windows.Simuladores
             {
                 MessageBox.Show("Informe o seu salário base por favor!!", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtSalario.Focus();
+                return;
+            }
+            if (!rbSolicitouBeneficioSim.Checked)
+            {
+                if (!rbSolicitouBeneficioNao.Checked)
+                {
+                    MessageBox.Show("Selecione se você tem ou nao 5 anos de carteira assinada ", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                     
+            }
+            if (rbSolicitouBeneficioNao.Checked)
+            {
+                MessageBox.Show("Somente pessoas que possuem no minimo 5 anos de carteira assinada tem direito ao beneficio", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            {
+
             }
             try
             {
@@ -31,6 +50,7 @@ namespace iRh.Windows.Simuladores
                 var mesesTrabalhados = double.Parse(cmbMesesTrabalhados.Text);
                 var verificador = Pis.Calcula(salario, mesesTrabalhados);
                 lblresultado.Text = "R$" + verificador.ToString("F2");
+                panel1.Visible = true;
                 
                 if (salario > 1320.00)
                 {
@@ -42,13 +62,11 @@ namespace iRh.Windows.Simuladores
             {
                 MessageBox.Show("Informe um valor valido por favor!!!, ex: 3500", "erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-          
-
         }
 
-        private void rbTempoDeCarteiraNao_CheckedChanged(object sender, EventArgs e)
+        private void rbSolicitouBeneficioSim_CheckedChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("Somente pessoas com mais de 5 anos de carteira assinada tem direito ao beneficio", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            
         }
     }
 }
