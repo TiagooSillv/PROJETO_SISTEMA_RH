@@ -27,7 +27,7 @@ namespace iRh.Windows.Simuladores
             for(int i = 0; i <= progressBar1.Maximum; i++)
             {
                 progressBar1.Value = i;
-                Thread.Sleep(3);
+                Thread.Sleep(1);
             }
             progressBar1.Visible = false;
             lblLoading.Visible = false;
