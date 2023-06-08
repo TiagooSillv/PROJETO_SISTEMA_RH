@@ -24,7 +24,7 @@ namespace iRh.Windows.Core
                     verificador = 4;
                     return verificador;
                 }
-                else if(mesesTrabalhados > 24)
+                else if(mesesTrabalhados >= 23)
                 {
                     verificador = 5;
                     return verificador;
@@ -48,7 +48,7 @@ namespace iRh.Windows.Core
                     verificador = 4;
                     return verificador;
                 }
-                else if (mesesTrabalhados > 23)
+                else if (mesesTrabalhados >= 23)
                 {
                     verificador = 5;
                     return verificador;
@@ -71,7 +71,7 @@ namespace iRh.Windows.Core
                     verificador = 4;
                     return  verificador;
                 }
-                else if (mesesTrabalhados > 23)
+                else if (mesesTrabalhados >= 23)
                 {
                     verificador = 5;
                     return verificador;

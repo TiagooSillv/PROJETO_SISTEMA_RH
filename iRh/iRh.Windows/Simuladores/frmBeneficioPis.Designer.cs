@@ -77,7 +77,7 @@ namespace iRh.Windows.Simuladores
             this.panel1.Controls.Add(this.lblResultado1);
             this.panel1.Controls.Add(this.lblresultado);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(102, 403);
+            this.panel1.Location = new System.Drawing.Point(113, 376);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(285, 42);
@@ -101,15 +101,15 @@ namespace iRh.Windows.Simuladores
             this.lblresultado.Location = new System.Drawing.Point(192, 9);
             this.lblresultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblresultado.Name = "lblresultado";
-            this.lblresultado.Size = new System.Drawing.Size(65, 25);
+            this.lblresultado.Size = new System.Drawing.Size(52, 25);
             this.lblresultado.TabIndex = 4;
-            this.lblresultado.Text = "label1";
+            this.lblresultado.Text = "-----";
             // 
             // btnCalcula
             // 
             this.btnCalcula.BackColor = System.Drawing.Color.Silver;
             this.btnCalcula.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnCalcula.Location = new System.Drawing.Point(180, 353);
+            this.btnCalcula.Location = new System.Drawing.Point(179, 336);
             this.btnCalcula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCalcula.Name = "btnCalcula";
             this.btnCalcula.Size = new System.Drawing.Size(148, 32);
@@ -201,11 +201,11 @@ namespace iRh.Windows.Simuladores
             // 
             this.lblLoading.AutoSize = true;
             this.lblLoading.BackColor = System.Drawing.Color.Silver;
-            this.lblLoading.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoading.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoading.ForeColor = System.Drawing.Color.Black;
-            this.lblLoading.Location = new System.Drawing.Point(201, 299);
+            this.lblLoading.Location = new System.Drawing.Point(192, 289);
             this.lblLoading.Name = "lblLoading";
-            this.lblLoading.Size = new System.Drawing.Size(127, 26);
+            this.lblLoading.Size = new System.Drawing.Size(108, 22);
             this.lblLoading.TabIndex = 16;
             this.lblLoading.Text = "LOADING...";
             this.lblLoading.Visible = false;
@@ -213,7 +213,7 @@ namespace iRh.Windows.Simuladores
             // progressBar1
             // 
             this.progressBar1.BackColor = System.Drawing.Color.Silver;
-            this.progressBar1.Location = new System.Drawing.Point(163, 328);
+            this.progressBar1.Location = new System.Drawing.Point(150, 314);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(198, 15);
             this.progressBar1.TabIndex = 15;
