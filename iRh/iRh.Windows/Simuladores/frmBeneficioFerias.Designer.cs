@@ -45,6 +45,7 @@
             // 
             // txtSalario
             // 
+            this.txtSalario.BackColor = System.Drawing.Color.Silver;
             this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalario.Location = new System.Drawing.Point(63, 149);
             this.txtSalario.Name = "txtSalario";
@@ -54,6 +55,7 @@
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
+            this.lblSalario.BackColor = System.Drawing.Color.Silver;
             this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalario.Location = new System.Drawing.Point(90, 105);
             this.lblSalario.Name = "lblSalario";
@@ -63,18 +65,20 @@
             // 
             // btnCalcula
             // 
+            this.btnCalcula.BackColor = System.Drawing.Color.Silver;
             this.btnCalcula.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcula.Location = new System.Drawing.Point(70, 270);
             this.btnCalcula.Name = "btnCalcula";
             this.btnCalcula.Size = new System.Drawing.Size(121, 35);
             this.btnCalcula.TabIndex = 2;
             this.btnCalcula.Text = "CALCULAR";
-            this.btnCalcula.UseVisualStyleBackColor = true;
+            this.btnCalcula.UseVisualStyleBackColor = false;
             this.btnCalcula.Click += new System.EventHandler(this.btnCalcula_Click);
             // 
             // rbVendaDeFerias
             // 
             this.rbVendaDeFerias.AutoSize = true;
+            this.rbVendaDeFerias.BackColor = System.Drawing.Color.Silver;
             this.rbVendaDeFerias.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbVendaDeFerias.Location = new System.Drawing.Point(231, 137);
             this.rbVendaDeFerias.Name = "rbVendaDeFerias";
@@ -82,7 +86,7 @@
             this.rbVendaDeFerias.TabIndex = 4;
             this.rbVendaDeFerias.TabStop = true;
             this.rbVendaDeFerias.Text = "Sim";
-            this.rbVendaDeFerias.UseVisualStyleBackColor = true;
+            this.rbVendaDeFerias.UseVisualStyleBackColor = false;
             this.rbVendaDeFerias.CheckedChanged += new System.EventHandler(this.rbVendaDeFerias_CheckedChanged);
             // 
             // lblResultado
@@ -97,7 +101,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblResultado);
@@ -119,6 +123,7 @@
             // 
             // cmbDiasVendidos
             // 
+            this.cmbDiasVendidos.BackColor = System.Drawing.Color.Silver;
             this.cmbDiasVendidos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDiasVendidos.FormattingEnabled = true;
             this.cmbDiasVendidos.Items.AddRange(new object[] {
@@ -141,6 +146,7 @@
             // rbVendaDeFeriasNao
             // 
             this.rbVendaDeFeriasNao.AutoSize = true;
+            this.rbVendaDeFeriasNao.BackColor = System.Drawing.Color.Silver;
             this.rbVendaDeFeriasNao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbVendaDeFeriasNao.Location = new System.Drawing.Point(314, 137);
             this.rbVendaDeFeriasNao.Name = "rbVendaDeFeriasNao";
@@ -148,12 +154,13 @@
             this.rbVendaDeFeriasNao.TabIndex = 7;
             this.rbVendaDeFeriasNao.TabStop = true;
             this.rbVendaDeFeriasNao.Text = "Não";
-            this.rbVendaDeFeriasNao.UseVisualStyleBackColor = true;
+            this.rbVendaDeFeriasNao.UseVisualStyleBackColor = false;
             this.rbVendaDeFeriasNao.CheckedChanged += new System.EventHandler(this.rbVendaDeFeriasNao_CheckedChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(221, 105);
             this.label1.Name = "label1";
@@ -164,7 +171,7 @@
             // lblLoading
             // 
             this.lblLoading.AutoSize = true;
-            this.lblLoading.BackColor = System.Drawing.Color.Transparent;
+            this.lblLoading.BackColor = System.Drawing.Color.Silver;
             this.lblLoading.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoading.ForeColor = System.Drawing.Color.Black;
             this.lblLoading.Location = new System.Drawing.Point(75, 220);
@@ -176,7 +183,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.progressBar1.BackColor = System.Drawing.Color.Silver;
             this.progressBar1.Location = new System.Drawing.Point(38, 249);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(198, 15);
@@ -188,8 +195,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::iRh.Windows.Properties.Resources.qual_o_perfil_ideal_dos_profissionais_de_rh1;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.imagens_rh;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(539, 436);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.progressBar1);
@@ -201,6 +208,7 @@
             this.Controls.Add(this.btnCalcula);
             this.Controls.Add(this.lblSalario);
             this.Controls.Add(this.txtSalario);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmBeneficioFerias";

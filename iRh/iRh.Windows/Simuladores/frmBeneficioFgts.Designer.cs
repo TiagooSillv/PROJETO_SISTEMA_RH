@@ -46,7 +46,7 @@
             this.lblSalario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblSalario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(165, 86);
+            this.lblSalario.Location = new System.Drawing.Point(198, 87);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(93, 27);
             this.lblSalario.TabIndex = 0;
@@ -56,7 +56,7 @@
             // 
             this.txtSalario.BackColor = System.Drawing.Color.Silver;
             this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalario.Location = new System.Drawing.Point(113, 115);
+            this.txtSalario.Location = new System.Drawing.Point(146, 116);
             this.txtSalario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(193, 32);
@@ -69,7 +69,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblResultado);
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(62, 267);
+            this.panel1.Location = new System.Drawing.Point(95, 268);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(308, 51);
@@ -99,7 +99,7 @@
             // 
             this.btnCalcular.BackColor = System.Drawing.Color.Silver;
             this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(134, 151);
+            this.btnCalcular.Location = new System.Drawing.Point(167, 152);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(157, 38);
@@ -114,7 +114,7 @@
             this.lblLoading.BackColor = System.Drawing.Color.Silver;
             this.lblLoading.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoading.ForeColor = System.Drawing.Color.Black;
-            this.lblLoading.Location = new System.Drawing.Point(150, 206);
+            this.lblLoading.Location = new System.Drawing.Point(183, 207);
             this.lblLoading.Name = "lblLoading";
             this.lblLoading.Size = new System.Drawing.Size(127, 26);
             this.lblLoading.TabIndex = 12;
@@ -123,8 +123,8 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.progressBar1.Location = new System.Drawing.Point(113, 235);
+            this.progressBar1.BackColor = System.Drawing.Color.Silver;
+            this.progressBar1.Location = new System.Drawing.Point(146, 236);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(198, 15);
             this.progressBar1.TabIndex = 11;
@@ -135,15 +135,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::iRh.Windows.Properties.Resources.qual_o_perfil_ideal_dos_profissionais_de_rh;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(460, 385);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.imagens_rh;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(485, 419);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmBeneficioFgts";
             this.Text = "Calculo Beneficio FGTS";

@@ -51,7 +51,7 @@ namespace iRh.Windows.Simuladores
             this.txtSalario.BackColor = System.Drawing.Color.Silver;
             this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.txtSalario.Location = new System.Drawing.Point(148, 99);
-            this.txtSalario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSalario.Margin = new System.Windows.Forms.Padding(4);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(239, 32);
             this.txtSalario.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace iRh.Windows.Simuladores
             this.panel1.Controls.Add(this.lblresultado);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(113, 376);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(285, 42);
             this.panel1.TabIndex = 2;
@@ -110,7 +110,7 @@ namespace iRh.Windows.Simuladores
             this.btnCalcula.BackColor = System.Drawing.Color.Silver;
             this.btnCalcula.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnCalcula.Location = new System.Drawing.Point(179, 336);
-            this.btnCalcula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCalcula.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalcula.Name = "btnCalcula";
             this.btnCalcula.Size = new System.Drawing.Size(148, 32);
             this.btnCalcula.TabIndex = 3;
@@ -164,7 +164,7 @@ namespace iRh.Windows.Simuladores
             "11",
             "12"});
             this.cmbMesesTrabalhados.Location = new System.Drawing.Point(63, 252);
-            this.cmbMesesTrabalhados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbMesesTrabalhados.Margin = new System.Windows.Forms.Padding(4);
             this.cmbMesesTrabalhados.Name = "cmbMesesTrabalhados";
             this.cmbMesesTrabalhados.Size = new System.Drawing.Size(160, 33);
             this.cmbMesesTrabalhados.TabIndex = 10;
@@ -175,7 +175,7 @@ namespace iRh.Windows.Simuladores
             this.rbSolicitouBeneficioNao.BackColor = System.Drawing.Color.Silver;
             this.rbSolicitouBeneficioNao.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.rbSolicitouBeneficioNao.Location = new System.Drawing.Point(148, 177);
-            this.rbSolicitouBeneficioNao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbSolicitouBeneficioNao.Margin = new System.Windows.Forms.Padding(4);
             this.rbSolicitouBeneficioNao.Name = "rbSolicitouBeneficioNao";
             this.rbSolicitouBeneficioNao.Size = new System.Drawing.Size(70, 29);
             this.rbSolicitouBeneficioNao.TabIndex = 12;
@@ -189,7 +189,7 @@ namespace iRh.Windows.Simuladores
             this.rbSolicitouBeneficioSim.BackColor = System.Drawing.Color.Silver;
             this.rbSolicitouBeneficioSim.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.rbSolicitouBeneficioSim.Location = new System.Drawing.Point(67, 177);
-            this.rbSolicitouBeneficioSim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbSolicitouBeneficioSim.Margin = new System.Windows.Forms.Padding(4);
             this.rbSolicitouBeneficioSim.Name = "rbSolicitouBeneficioSim";
             this.rbSolicitouBeneficioSim.Size = new System.Drawing.Size(66, 29);
             this.rbSolicitouBeneficioSim.TabIndex = 13;
@@ -238,9 +238,9 @@ namespace iRh.Windows.Simuladores
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblSalario);
             this.Controls.Add(this.txtSalario);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBeneficioPis";
-            this.Text = "frmBeneficioPis";
+            this.Text = "Beneficio PIS";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

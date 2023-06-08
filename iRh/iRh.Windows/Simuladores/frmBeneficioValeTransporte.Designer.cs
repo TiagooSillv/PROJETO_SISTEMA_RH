@@ -31,6 +31,7 @@
             this.lblSalario = new System.Windows.Forms.Label();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnCalcula = new System.Windows.Forms.Button();
             this.lblValorDaPassagem = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.lblQuantidadeDePassagem = new System.Windows.Forms.Label();
             this.lblLoading = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(343, 46);
             this.panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(185, 25);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Valor do desconto: ";
             // 
             // lblResultado
             // 
@@ -168,16 +178,6 @@
             this.progressBar1.Value = 100;
             this.progressBar1.Visible = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 25);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Valor do desconto: ";
-            // 
             // frmBeneficioValeTransporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -195,7 +195,7 @@
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
             this.Name = "frmBeneficioValeTransporte";
-            this.Text = "Calculo do Vale Transporte";
+            this.Text = "Calculo Vale Transporte";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

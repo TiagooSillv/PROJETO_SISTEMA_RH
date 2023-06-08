@@ -33,71 +33,115 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.lblSalario = new System.Windows.Forms.Label();
+            this.lblLoading = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCalcular
             // 
+            this.btnCalcular.BackColor = System.Drawing.Color.Silver;
             this.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(319, 173);
+            this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnCalcular.Location = new System.Drawing.Point(173, 181);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(137, 45);
+            this.btnCalcular.Size = new System.Drawing.Size(124, 31);
             this.btnCalcular.TabIndex = 7;
             this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblResultado);
             this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(12, 247);
+            this.panel1.Location = new System.Drawing.Point(76, 276);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(768, 191);
+            this.panel1.Size = new System.Drawing.Size(322, 45);
             this.panel1.TabIndex = 6;
-            this.panel1.Visible = false;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(288, 72);
+            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblResultado.Location = new System.Drawing.Point(193, 10);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(168, 38);
+            this.lblResultado.Size = new System.Drawing.Size(52, 25);
             this.lblResultado.TabIndex = 1;
-            this.lblResultado.Text = "lblResultado";
+            this.lblResultado.Text = "-----";
             // 
             // txtSalario
             // 
-            this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalario.Location = new System.Drawing.Point(306, 124);
+            this.txtSalario.BackColor = System.Drawing.Color.Silver;
+            this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.txtSalario.Location = new System.Drawing.Point(157, 143);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(162, 43);
+            this.txtSalario.Size = new System.Drawing.Size(162, 32);
             this.txtSalario.TabIndex = 5;
             // 
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
-            this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(337, 83);
+            this.lblSalario.BackColor = System.Drawing.Color.Silver;
+            this.lblSalario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblSalario.Location = new System.Drawing.Point(200, 113);
             this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(100, 38);
+            this.lblSalario.Size = new System.Drawing.Size(75, 27);
             this.lblSalario.TabIndex = 4;
             this.lblSalario.Text = "Salário";
+            // 
+            // lblLoading
+            // 
+            this.lblLoading.AutoSize = true;
+            this.lblLoading.BackColor = System.Drawing.Color.Silver;
+            this.lblLoading.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoading.ForeColor = System.Drawing.Color.Black;
+            this.lblLoading.Location = new System.Drawing.Point(170, 226);
+            this.lblLoading.Name = "lblLoading";
+            this.lblLoading.Size = new System.Drawing.Size(127, 26);
+            this.lblLoading.TabIndex = 16;
+            this.lblLoading.Text = "LOADING...";
+            this.lblLoading.Visible = false;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.BackColor = System.Drawing.Color.Silver;
+            this.progressBar1.Location = new System.Drawing.Point(132, 255);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(198, 15);
+            this.progressBar1.TabIndex = 15;
+            this.progressBar1.Value = 100;
+            this.progressBar1.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(2, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(185, 25);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Valor do desconto: ";
             // 
             // frmDescontoIrrf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.imagens_rh;
+            this.ClientSize = new System.Drawing.Size(480, 450);
+            this.Controls.Add(this.lblLoading);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
             this.Name = "frmDescontoIrrf";
-            this.Text = "frmDescontoIrrf";
+            this.Text = "Desconto do Imposto de Renda";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -112,5 +156,8 @@
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.Label lblSalario;
+        private System.Windows.Forms.Label lblLoading;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -175,8 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::iRh.Windows.Properties.Resources.qual_o_perfil_ideal_dos_profissionais_de_rh1;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.imagens_rh;
             this.ClientSize = new System.Drawing.Size(447, 475);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.progressBar1);

@@ -168,7 +168,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBeneficioPericulosidade";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmBeneficioPericulosidade";
+            this.Text = "Benefício Periculosidade";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

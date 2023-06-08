@@ -34,13 +34,13 @@
             this.lblAnosDeCarteira = new System.Windows.Forms.Label();
             this.btnCalcula = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblresultado = new System.Windows.Forms.Label();
             this.txtVezesSolicitadas = new System.Windows.Forms.TextBox();
             this.lblVezesSolicitadas = new System.Windows.Forms.Label();
             this.txtMesesTrabalhados = new System.Windows.Forms.TextBox();
             this.lblLoading = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,6 +130,15 @@
             this.panel1.Size = new System.Drawing.Size(395, 51);
             this.panel1.TabIndex = 15;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(72, 98);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 25);
+            this.label1.TabIndex = 5;
+            // 
             // lblresultado
             // 
             this.lblresultado.AutoSize = true;
@@ -204,15 +213,6 @@
             this.progressBar1.Value = 100;
             this.progressBar1.Visible = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(72, 98);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 25);
-            this.label1.TabIndex = 5;
-            // 
             // frmBeneficioSeguroDesemprego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -231,7 +231,7 @@
             this.Controls.Add(this.btnCalcula);
             this.Controls.Add(this.panel1);
             this.Name = "frmBeneficioSeguroDesemprego";
-            this.Text = "frmBeneficioSeguroDesemprego";
+            this.Text = "Beneficio Seguro Desemprego";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
