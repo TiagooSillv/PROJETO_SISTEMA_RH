@@ -53,7 +53,7 @@
             this.lblTelefone = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.linklblChamaNoZap = new System.Windows.Forms.LinkLabel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbDocumento = new System.Windows.Forms.ComboBox();
             this.lblDocumentoDeIdentificacao = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -316,13 +316,13 @@
             this.linklblChamaNoZap.TabStop = true;
             this.linklblChamaNoZap.Text = "Chamar no zap";
             // 
-            // comboBox1
+            // cmbDocumento
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(340, 56);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(134, 21);
-            this.comboBox1.TabIndex = 25;
+            this.cmbDocumento.FormattingEnabled = true;
+            this.cmbDocumento.Location = new System.Drawing.Point(340, 56);
+            this.cmbDocumento.Name = "cmbDocumento";
+            this.cmbDocumento.Size = new System.Drawing.Size(134, 21);
+            this.cmbDocumento.TabIndex = 25;
             // 
             // lblDocumentoDeIdentificacao
             // 
@@ -340,7 +340,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 483);
             this.Controls.Add(this.lblDocumentoDeIdentificacao);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbDocumento);
             this.Controls.Add(this.linklblChamaNoZap);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtTelefone);
@@ -402,7 +402,7 @@
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.LinkLabel linklblChamaNoZap;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbDocumento;
         private System.Windows.Forms.Label lblDocumentoDeIdentificacao;
     }
 }

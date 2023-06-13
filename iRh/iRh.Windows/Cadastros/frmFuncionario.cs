@@ -20,6 +20,18 @@ namespace iRh.Windows.Cadastros
         private void frmFuncionario_Load(object sender, EventArgs e)
         {
             CarregarEstados();
+            CarregarDocumentos();
+
+        }
+        private void CarregarDocumentos()
+        {
+            var documentos = new DocumentoDeIdentificacao();
+            var listaDeDocumentos = documentos.obterTodosDocumentosDeIdentificacao();
+            var documentosAZ = listaDeDocumentos.OrderBy(x => x.Descricao).ToList();
+            cmbDocumento.Items.Clear();
+            cmbDocumento.DataSource = documentosAZ;
+            cmbDocumento.DisplayMember = "Descricao";
+            cmbDocumento.ValueMember = "Id";
         }
         private void CarregarEstados()
         {
