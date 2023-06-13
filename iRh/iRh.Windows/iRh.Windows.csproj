@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Core\AdicionalNoturno.cs" />
     <Compile Include="Core\Colaborador.cs" />
+    <Compile Include="Core\DocumentoDeIdentificacao.cs" />
     <Compile Include="Core\Estados.cs" />
     <Compile Include="Core\Ferias.cs" />
     <Compile Include="Core\Fgts.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Core\Pis.cs" />
     <Compile Include="Core\SeguroDesemprego.cs" />
     <Compile Include="Core\ValeTransporte.cs" />
+    <Compile Include="ListaDeDocumentos\Add.cs" />
     <Compile Include="PrincipalMdi.cs">
       <SubType>Form</SubType>
     </Compile>
