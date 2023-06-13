@@ -49,7 +49,7 @@
             this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalario.Location = new System.Drawing.Point(63, 149);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(128, 29);
+            this.txtSalario.Size = new System.Drawing.Size(128, 25);
             this.txtSalario.TabIndex = 0;
             // 
             // lblSalario
@@ -59,7 +59,7 @@
             this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalario.Location = new System.Drawing.Point(90, 105);
             this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(82, 23);
+            this.lblSalario.Size = new System.Drawing.Size(62, 17);
             this.lblSalario.TabIndex = 1;
             this.lblSalario.Text = "SALÁRIO";
             // 
@@ -82,7 +82,7 @@
             this.rbVendaDeFerias.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbVendaDeFerias.Location = new System.Drawing.Point(231, 137);
             this.rbVendaDeFerias.Name = "rbVendaDeFerias";
-            this.rbVendaDeFerias.Size = new System.Drawing.Size(62, 27);
+            this.rbVendaDeFerias.Size = new System.Drawing.Size(49, 21);
             this.rbVendaDeFerias.TabIndex = 4;
             this.rbVendaDeFerias.TabStop = true;
             this.rbVendaDeFerias.Text = "Sim";
@@ -95,7 +95,7 @@
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultado.Location = new System.Drawing.Point(150, 11);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(38, 23);
+            this.lblResultado.Size = new System.Drawing.Size(28, 17);
             this.lblResultado.TabIndex = 5;
             this.lblResultado.Text = "----";
             // 
@@ -117,7 +117,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 23);
+            this.label2.Size = new System.Drawing.Size(109, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "Valor a receber: ";
             // 
@@ -139,7 +139,7 @@
             "10"});
             this.cmbDiasVendidos.Location = new System.Drawing.Point(225, 170);
             this.cmbDiasVendidos.Name = "cmbDiasVendidos";
-            this.cmbDiasVendidos.Size = new System.Drawing.Size(152, 29);
+            this.cmbDiasVendidos.Size = new System.Drawing.Size(152, 25);
             this.cmbDiasVendidos.TabIndex = 3;
             this.cmbDiasVendidos.Visible = false;
             // 
@@ -150,7 +150,7 @@
             this.rbVendaDeFeriasNao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbVendaDeFeriasNao.Location = new System.Drawing.Point(314, 137);
             this.rbVendaDeFeriasNao.Name = "rbVendaDeFeriasNao";
-            this.rbVendaDeFeriasNao.Size = new System.Drawing.Size(63, 27);
+            this.rbVendaDeFeriasNao.Size = new System.Drawing.Size(51, 21);
             this.rbVendaDeFeriasNao.TabIndex = 7;
             this.rbVendaDeFeriasNao.TabStop = true;
             this.rbVendaDeFeriasNao.Text = "Não";
@@ -164,7 +164,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(221, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(303, 23);
+            this.label1.Size = new System.Drawing.Size(237, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "Deseja Vender alguns dias de ferias ?";
             // 
@@ -176,7 +176,7 @@
             this.lblLoading.ForeColor = System.Drawing.Color.Black;
             this.lblLoading.Location = new System.Drawing.Point(75, 220);
             this.lblLoading.Name = "lblLoading";
-            this.lblLoading.Size = new System.Drawing.Size(127, 26);
+            this.lblLoading.Size = new System.Drawing.Size(103, 20);
             this.lblLoading.TabIndex = 10;
             this.lblLoading.Text = "LOADING...";
             this.lblLoading.Visible = false;
@@ -193,7 +193,7 @@
             // 
             // frmBeneficioFerias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::iRh.Windows.Properties.Resources.imagens_rh;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
