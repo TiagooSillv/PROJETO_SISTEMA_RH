@@ -1,11 +1,9 @@
-﻿
-using Newtonsoft.Json;
+﻿using System.Collections.Generic;
 using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Net;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
 
 namespace iRh.Windows.Core
 {
@@ -21,27 +19,28 @@ namespace iRh.Windows.Core
         public string Gia { get; set; }
         public string Ddd { get; set; }
         public string Siafi { get; set; }
+        public bool Erro { get; set; }
 
         public Endereco ObterPorCep(string cep)
         {
-            //
-            return new Endereco();
+
+            var enderecoDaApi = new Endereco();
+
+            //Instancia HTTP que permite obter informações da Internet através de uma URL
+            var http = new HttpClient();
+
+            var url = new Uri("https://viacep.com.br/ws/" + cep + "/json/");
+            var result = http.GetAsync(url).GetAwaiter().GetResult();
+
+            //Converte o resultado obtido em uma string
+            var resultContent = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                   
+            //Converte a string json para nossa classe ViaCepWrapper
+            enderecoDaApi = JsonConvert.DeserializeObject<Endereco>(resultContent);
+
+            return enderecoDaApi;
+
+           
         }
-    }
-    public Endereco ObterPorCep(string cep)
-    {
-        var enderecoDaApi = new Endereco();
-
-        var http = new HttpClient();
-
-        var url = new Uri("https://viacep.com.br/ws/" + cep + "jason/");
-        var result = http.GetAsync(url).GetAwaiter().GetResult();
-
-        var resultContent = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-
-        enderecoDaApi = JsonConvert.DeserializeObject<Endereco>(resultContent);
-
-        return enderecoDaApi;
-
     }
 }

@@ -50,8 +50,42 @@ namespace iRh.Windows.Cadastros
         {
             var cepDigitado = txtCep.Text;
             var endereco = new Endereco();
-            endereco = endereco .ObterPorCep(cepDigitado);
+            endereco = endereco.ObterPorCep(cepDigitado);
+            if (endereco.Erro)
+            {
+                MessageBox.Show("Erro!", "Alerta", MessageBoxButtons.OK);
+                return;
+            }
+           
+                txtLogradouro.Text = endereco.Logradouro;
+                txtBairro.Text = endereco.Bairro;
+                txtCidade.Text = endereco.Localidade;
+                cmbEstados.Text = endereco.Uf;              
+        }
 
+        private void txtLogradouro_TextChanged(object sender, EventArgs e)
+        {
+            txtLogradouro.Enabled = false;
+        }
+
+        private void txtNumero_TextChanged(object sender, EventArgs e)
+        {
+            txtNumero.Enabled = false;
+        }
+
+        private void txtBairro_TextChanged(object sender, EventArgs e)
+        {
+            txtBairro.Enabled = false;
+        }
+
+        private void txtCidade_TextChanged(object sender, EventArgs e)
+        {
+            txtCidade.Enabled = false;
+        }
+
+        private void cmbEstados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbEstados.Enabled = false;
         }
     }
 }
