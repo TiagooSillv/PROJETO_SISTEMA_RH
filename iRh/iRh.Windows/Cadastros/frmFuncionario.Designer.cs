@@ -48,7 +48,7 @@
             this.lblDdd = new System.Windows.Forms.Label();
             this.cmbEstados = new System.Windows.Forms.ComboBox();
             this.lblUf = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -266,15 +266,16 @@
             this.lblUf.TabIndex = 19;
             this.lblUf.Text = "UF/ESTADO";
             // 
-            // button1
+            // btnPesquisar
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(161, 192);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 29);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Pesquisar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.Location = new System.Drawing.Point(161, 192);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(66, 29);
+            this.btnPesquisar.TabIndex = 20;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtTelefone
             // 
@@ -345,7 +346,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.lblTelefone);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.lblUf);
             this.Controls.Add(this.cmbEstados);
             this.Controls.Add(this.txtDdd);
@@ -397,7 +398,7 @@
         private System.Windows.Forms.Label lblDdd;
         private System.Windows.Forms.ComboBox cmbEstados;
         private System.Windows.Forms.Label lblUf;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Button button2;

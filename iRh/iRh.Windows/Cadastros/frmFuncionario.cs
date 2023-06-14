@@ -45,5 +45,13 @@ namespace iRh.Windows.Cadastros
             cmbEstados.ValueMember = "Sigla";
 
         }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            var cepDigitado = txtCep.Text;
+            var endereco = new Endereco();
+            endereco = endereco .ObterPorCep(cepDigitado);
+
+        }
     }
 }
