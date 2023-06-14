@@ -113,6 +113,7 @@
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(98, 20);
             this.txtCep.TabIndex = 7;
+            this.txtCep.TextChanged += new System.EventHandler(this.txtCep_TextChanged);
             // 
             // label4
             // 

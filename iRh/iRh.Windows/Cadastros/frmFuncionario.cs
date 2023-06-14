@@ -60,7 +60,7 @@ namespace iRh.Windows.Cadastros
                 txtLogradouro.Text = endereco.Logradouro;
                 txtBairro.Text = endereco.Bairro;
                 txtCidade.Text = endereco.Localidade;
-                cmbEstados.Text = endereco.Uf;              
+                cmbEstados.Text = endereco.Uf;           
         }
 
         private void txtLogradouro_TextChanged(object sender, EventArgs e)
@@ -86,6 +86,17 @@ namespace iRh.Windows.Cadastros
         private void cmbEstados_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbEstados.Enabled = false;
+        }
+
+        private void txtCep_TextChanged(object sender, EventArgs e)
+        {
+                int maxLength = 10; // Define o número máximo de caracteres permitidos
+
+            if (txtCep.Text.Length > maxLength)
+            {
+                txtCep.Text = txtCep.Text.Substring(0, maxLength); // Limita o número de caracteres
+                txtCep.SelectionStart = maxLength; // Define a posição do cursor
+            }
         }
     }
 }
