@@ -49,8 +49,17 @@ namespace iRh.Windows.Cadastros
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             var cepDigitado = txtCep.Text;
+
+            if(cepDigitado.Length < 9)
+            {
+                MessageBox.Show("Digite um cep Válido");
+                txtCep.Focus();
+                return;
+            }
+
             var endereco = new Endereco();
             endereco = endereco.ObterPorCep(cepDigitado);
+
             if (endereco.Erro)
             {
                 MessageBox.Show("Erro!", "Alerta", MessageBoxButtons.OK);
@@ -61,42 +70,6 @@ namespace iRh.Windows.Cadastros
                 txtBairro.Text = endereco.Bairro;
                 txtCidade.Text = endereco.Localidade;
                 cmbEstados.Text = endereco.Uf;           
-        }
-
-        private void txtLogradouro_TextChanged(object sender, EventArgs e)
-        {
-            txtLogradouro.Enabled = false;
-        }
-
-        private void txtNumero_TextChanged(object sender, EventArgs e)
-        {
-            txtNumero.Enabled = false;
-        }
-
-        private void txtBairro_TextChanged(object sender, EventArgs e)
-        {
-            txtBairro.Enabled = false;
-        }
-
-        private void txtCidade_TextChanged(object sender, EventArgs e)
-        {
-            txtCidade.Enabled = false;
-        }
-
-        private void cmbEstados_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cmbEstados.Enabled = false;
-        }
-
-        private void txtCep_TextChanged(object sender, EventArgs e)
-        {
-                int maxLength = 10; // Define o número máximo de caracteres permitidos
-
-            if (txtCep.Text.Length > maxLength)
-            {
-                txtCep.Text = txtCep.Text.Substring(0, maxLength); // Limita o número de caracteres
-                txtCep.SelectionStart = maxLength; // Define a posição do cursor
-            }
         }
     }
 }
