@@ -63,10 +63,16 @@ namespace iRh.Windows.Cadastros
             if (endereco.Erro)
             {
                 MessageBox.Show("Erro!", "Alerta", MessageBoxButtons.OK);
+                txtCep.Focus();
                 return;
             }
-           
-                txtLogradouro.Text = endereco.Logradouro;
+
+            if (endereco.Localidade != "") { txtCidade.Enabled = false; }
+            if (endereco.Uf != "") { cmbEstados.Enabled = false; }
+            if (endereco.Localidade != "") { txtCidade.Enabled = false; }
+
+
+            txtLogradouro.Text = endereco.Logradouro;
                 txtBairro.Text = endereco.Bairro;
                 txtCidade.Text = endereco.Localidade;
                 cmbEstados.Text = endereco.Uf;           
