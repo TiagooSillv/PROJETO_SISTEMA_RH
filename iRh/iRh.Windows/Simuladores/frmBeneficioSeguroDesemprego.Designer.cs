@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeneficioSeguroDesemprego));
             this.rbSolicitouBeneficioNao = new System.Windows.Forms.RadioButton();
             this.rbSolicitouBeneficoSim = new System.Windows.Forms.RadioButton();
             this.lblTrabalahndoAtualmente = new System.Windows.Forms.Label();
@@ -230,6 +231,7 @@
             this.Controls.Add(this.lblAnosDeCarteira);
             this.Controls.Add(this.btnCalcula);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBeneficioSeguroDesemprego";
             this.Text = "Beneficio Seguro Desemprego";
             this.panel1.ResumeLayout(false);

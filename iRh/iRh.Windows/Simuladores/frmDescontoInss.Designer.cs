@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDescontoInss));
             this.lblSalario = new System.Windows.Forms.Label();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -140,6 +141,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDescontoInss";
             this.Text = "Desconto INSS";
             this.panel1.ResumeLayout(false);

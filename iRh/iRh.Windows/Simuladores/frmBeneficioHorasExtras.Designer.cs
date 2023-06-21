@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeneficioHorasExtras));
             this.txtHorasExtra = new System.Windows.Forms.TextBox();
             this.lblHorasExtras = new System.Windows.Forms.Label();
             this.btnCalacula = new System.Windows.Forms.Button();
@@ -171,6 +172,7 @@
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBeneficioHorasExtras";
             this.Text = "Horas Extras";
