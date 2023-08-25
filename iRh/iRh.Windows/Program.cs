@@ -16,7 +16,7 @@ namespace iRh.Windows
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PrincipalMdi());
+            Application.Run(new frmLogin());
         }
     }
 }
